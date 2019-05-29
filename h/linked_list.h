@@ -4,8 +4,7 @@
 #include <string>
 using namespace std;
 
-typedef struct question_s
-{
+typedef struct question_s {
     int     index;
     string  ques;
     string  ans_A;
@@ -15,14 +14,12 @@ typedef struct question_s
     string  ans;
 }question;
 
-typedef struct node_question
-{
+typedef struct node_question {
     question             data;
     node_question       *next;
 } node;
 
-typedef struct linked_list_question
-{
+typedef struct linked_list_question {
     node       *head;
     node       *tail;
 } linked_list;

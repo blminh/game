@@ -12,10 +12,12 @@ node *create_node(question ques) {
     node *pointer = new node;
     pointer->data = ques;
     pointer->next = NULL;
+
     return pointer;
 }
 question insert_ques(int index, string quest, string ans_A, string ans_B, string ans_C, string ans_D, string ans) {
     question ques;
+
     ques.index = index;
     ques.ques = quest;
     ques.ans_A = ans_A;
@@ -23,10 +25,12 @@ question insert_ques(int index, string quest, string ans_A, string ans_B, string
     ques.ans_C = ans_C;
     ques.ans_D = ans_D;
     ques.ans = ans;
+
     return ques;
 }
 void insert_head(linked_list &list, question ques) {
     node *pointer = create_node(ques);
+
     if (pointer == NULL) {
         exit(1);
     }

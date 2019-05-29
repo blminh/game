@@ -3,14 +3,17 @@
 
 typedef struct coordinates_s
 {
-	int x;
-	int y;
-}coordinates;
+    int x;
+    int y;
+} coordinates;
 
-#define UP      1
-#define DOWN    2
-#define LEFT    3
-#define RIGHT   4
+enum DIRECTOR_OPT {
+    UP       = 1,
+    DOWN     = 2,
+    LEFT     = 3,
+    RIGHT    = 4,
+    UNDEFINE
+};
 
 coordinates Selection(coordinates &coor);
 

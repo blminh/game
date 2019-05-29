@@ -1,6 +1,0 @@
-﻿  linked_list.cpp
-  main.cpp
-f:\cau_truc_du_lieu\game_ai_la_trieu_phu\project\main.cpp(9): warning C4101: 'process': unreferenced local variable
-f:\cau_truc_du_lieu\game_ai_la_trieu_phu\project\main.cpp(34): warning C4101: 'index': unreferenced local variable
-  Generating Code...
-  Project.vcxproj -> F:\cau_truc_du_lieu\DOAN\Debug\Project.exe

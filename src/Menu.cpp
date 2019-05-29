@@ -3,10 +3,9 @@
 #include "move_position.h"
 #include <iostream>
 
-int Menu() {
-    int select;
-    // VeChu('a', 1); VeChu('i', 1); VeChu('l', 1); VeChu('a', 2); VeChu('t', 1); VeChu('r', 1); 
-    // VeChu('i', 2); VeChu('e', 1); VeChu('u', 1); VeChu('p', 1); VeChu('h', 1); VeChu('u', 2);
+MENU_OPT Menu() {
+    MENU_OPT select = UNDEFINE;
+
     gotoXY(50, 12);
     std::cout << "VAO GAME";
     gotoXY(50, 14);
@@ -15,17 +14,20 @@ int Menu() {
     std::cout << "HUONG DAN";
     gotoXY(50, 18);
     std::cout << "THOAT";
+
     coordinates coor;
     coor.x = 48;
     coor.y = 12;
     Selection(coor);
+
     if (coor.y == 12)
-        select = 1;
+        select = VAO_GAME;
     else if (coor.y == 14)
-        select = 2;
+        select = DIEM_CAO_NHAT;
     else if (coor.y == 16)
-        select = 3;
+        select = HUONG_DAN;
     else if (coor.y == 18)
-        select = 4;
+        select = THOAT;
+
     return select;
 }

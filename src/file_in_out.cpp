@@ -13,6 +13,7 @@ void read_file(linked_list &list) {
     string quest, ans_A, ans_B, ans_C, ans_D, ans;
     int index = 1;
     ifstream fileout;
+
     fileout.open("F:/cau_truc_du_lieu/Game_ALTP/cauhoi.txt", ios::out);
     if (!fileout.is_open()) {
         cout << "Can not open file." << endl;
@@ -25,6 +26,7 @@ void read_file(linked_list &list) {
         getline(fileout, ans_B);
         getline(fileout, ans_A);
         getline(fileout, ans);
+
         question ques = insert_ques(index, quest, ans_A, ans_B, ans_C, ans_D, ans);
         insert_head(list, ques);
         index++;
@@ -35,6 +37,7 @@ void Introduce() {
     string money;
     int y = 6;
     ifstream fileout;
+
     fileout.open("F:/cau_truc_du_lieu/Game_ALTP/tien_thuong.txt", ios::out);
     if (!fileout.is_open()) {
         cout << "Can not open file." << endl;
@@ -51,6 +54,7 @@ void Introduce() {
 void file_high_score(int high_score, int &flag){
     int i = 0;
     ifstream fileout;
+
     fileout.open("F:/cau_truc_du_lieu/Game_ALTP/high_score.txt", ios::out);
     if (!fileout.is_open()) {
         cout << "Can not open file." << endl;
@@ -93,6 +97,7 @@ void file_high_score(int high_score, int &flag){
 void highScore(){
     int i = 0;
     ifstream fileout;
+
     fileout.open("F:/cau_truc_du_lieu/Game_ALTP/high_score.txt", ios::out);
     if (!fileout.is_open()) {
         cout << "Can not open file." << endl;
